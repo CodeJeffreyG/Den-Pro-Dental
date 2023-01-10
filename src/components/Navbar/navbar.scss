@@ -16,12 +16,18 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    
   }
 
-  .list-container, li {
+  .list-container,
+  li {
     margin-left: 1rem;
     cursor: pointer;
     list-style: none;
+
+    .headerlink-title {
+      color: black;
+      text-decoration: none;
+      padding: 0 5px;
+    }
   }
 }
