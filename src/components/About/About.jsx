@@ -1,7 +1,10 @@
 import React from "react";
+import  aboutData  from "./aboutData";
 import "./about.scss";
 
 const About = () => {
+  console.log(aboutData);
+
   return (
     <div className="about-container">
       <div className="about-top-container">
