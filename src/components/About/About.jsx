@@ -1,9 +1,9 @@
 import React from "react";
-import  aboutData  from "./aboutData";
+import aboutData from "./aboutData";
 import "./about.scss";
 
 const About = () => {
-  console.log(aboutData);
+  const data = aboutData;
 
   return (
     <div className="about-container">
@@ -13,7 +13,19 @@ const About = () => {
         </head>
 
         <div className="about-card-container">
-          <div></div>
+          <div className="card">
+            <div className="card-image-container">
+              <img src={data[0].img} alt="" />
+            </div>
+
+            <div className="card-title-container">
+              <h3>{data[0].title}</h3>
+            </div>
+
+            <div className="card-message-container">
+              <span>{data[0].text}</span>
+            </div>
+          </div>
           <div></div>
           <div></div>
         </div>
