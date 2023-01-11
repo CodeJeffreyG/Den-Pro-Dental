@@ -1,5 +1,6 @@
 import React from "react";
 import aboutData from "./aboutData";
+import AboutCard from "../AboutCard/AboutCard";
 import "./about.scss";
 
 const About = () => {
@@ -13,23 +14,11 @@ const About = () => {
         </head>
 
         <div className="about-card-container">
-
-          <div className="card">
-            <div className="card-image-container">
-              <img src={data[0].img} alt="" />
-            </div>
-
-            <div className="card-title-container">
-              <h3>{data[0].title}</h3>
-            </div>
-
-            <div className="card-message-container">
-              <span>{data[0].text}</span>
-            </div>
-
-          </div>
-          <div></div>
-          <div></div>
+          {aboutData.map((card) => {
+            return (
+              <AboutCard img={card.img} title={card.title} text={card.text} />
+            );
+          })}
         </div>
       </div>
     </div>
