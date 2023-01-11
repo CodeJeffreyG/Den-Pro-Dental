@@ -4,15 +4,20 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 425px;
-    height: auto;
-    background-color: green;
+    width: 340px;
+    height: 500px;
+    background-color: #68717F;
+    border: .05 #CFD0D3 solid;
 
     .card-image-container {
       display: flex;
-      flex: 3;
-      width: 100%;
+      justify-content: center;
+      object-fit: contain;
       height: 35%;
+
+      .card-image-container, img {
+        width: 100%;
+      }
     }
 
     .card-title-container {
@@ -25,7 +30,8 @@
 
       .card-title-container,
       h3 {
-        border-bottom: 3px solid black;
+        color: #1F273A;
+        border-bottom: 3px solid #4B5261;
       }
     }
 
@@ -33,11 +39,8 @@
         display: flex;
         align-items: center;
         flex: 4;
-        padding: 0;
-        margin: 0;
         width: 75%;
         height: 25%;
-        background-color: purple;
 
         .card-message-container, span {
             text-align: center;
