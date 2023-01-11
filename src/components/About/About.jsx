@@ -13,6 +13,7 @@ const About = () => {
         </head>
 
         <div className="about-card-container">
+
           <div className="card">
             <div className="card-image-container">
               <img src={data[0].img} alt="" />
@@ -25,6 +26,7 @@ const About = () => {
             <div className="card-message-container">
               <span>{data[0].text}</span>
             </div>
+
           </div>
           <div></div>
           <div></div>
