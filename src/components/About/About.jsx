@@ -1,6 +1,7 @@
 import React from "react";
 import aboutData from "./aboutData";
-import AboutCard from "../AboutCard/AboutCard";
+import HexagonIcon from "@mui/icons-material/Hexagon";
+
 import "./about.scss";
 
 const About = () => {
@@ -8,20 +9,20 @@ const About = () => {
 
   return (
     <div className="about-container">
-      <div className="about-card-container">
-        {aboutData.map((card) => {
-          return (
-            <AboutCard img={card.img} title={card.title} text={card.text} />
-          );
-        })}
+      <head className="about-title-container">
+        <p>our</p>
+        <h2>Values</h2>
+      </head>
+      <div className="value-container">
+        <div className="value-icon-container">
+          <HexagonIcon sx={{ fontSize: 70 }}></HexagonIcon>
+        </div>
       </div>
-
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-        mollitia itaque ullam distinctio eligendi sequi perferendis magni ipsam
-        veritatis! Tempore, soluta dicta. Quia quos quis recusandae, repellendus
-        at nemo magnam.
-      </p>
+      <div className="value-container"></div>
+      <div className="value-container"></div>
+      <div className="value-container"></div>
+      <div className="value-container"></div>
+      <div className="value-container"></div>
     </div>
   );
 };
