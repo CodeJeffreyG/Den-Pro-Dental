@@ -15,7 +15,7 @@ const About = () => {
       </head>
       <div className="value-container">
         <div className="value-icon-container">
-          <HexagonIcon sx={{ fontSize: 70 }}></HexagonIcon>
+          <HexagonIcon sx={{ fontSize: 120, color: "#FFFFFF" }}></HexagonIcon>
         </div>
       </div>
       <div className="value-container"></div>
