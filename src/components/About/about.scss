@@ -1,7 +1,6 @@
 .about-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   width: 100%;
   height: calc(100vh - 160px);
   background-color: #007fff;
@@ -35,6 +34,7 @@
   }
 
   .value-container {
+    display: flex;
     width: 500px;
     height: 250px;
     border: 1px solid black;
@@ -42,15 +42,56 @@
 
     .value-icon-container {
       display: flex;
-      justify-content: center;
       align-items: center;
       width: 40%;
       height: 100%;
       background-color: red;
+    }
 
-      .hexagon {
-        font-size: large;
+    .value-container, main {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      height: 100%;
+      background-color: purple;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .about-container {
+    height: calc(350vh - 160px);
+
+    .about-title-container {
+      height: 100px;
+
+      .about-title-container,
+      p {
+        font-size: 1rem;
       }
+
+      .about-title-container,
+      h2 {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+
+      .about-title-container,
+      p,
+      h2 {
+        margin-left: 1.5rem;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .value-container {
+    margin: 1rem;
+
+    .value-icon-container {
+      width: 40%;
+      height: 100%;
+      background-color: red;
     }
   }
 }
